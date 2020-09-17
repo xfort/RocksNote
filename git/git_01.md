@@ -31,4 +31,14 @@ git remote add xxName xxAddrURL // xxName为自定义别名，xxAddrURL为仓库
 git remote -V //查看校验
 git push xxName xxBranch //推到远程仓库
 ```
-
+##### 5.设置代理
+```
+git config --global http.proxy socks5://127.0.0.1:1080
+http_proxy=socks5://127.0.0.1:1080 go get github.com/mattn/go-sqlite3
+git config --global --unset http.proxy //取消代理
+```
+##### 6.覆盖远程分支
+```
+  git push  origin master --force
+  git push -f origin master
+```
