@@ -1,37 +1,10 @@
 # RocksNote
+疑难BUG、开发文章、软件命令、代码记录还有一些生活随笔吧
 
-#### 介绍
-开发笔记
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+* [一.FFMPEG](ffmpeg/ffmpeg_01.md)
+* [二.Git](git/git_01.md) 
+* [三.Android](android) 
+* [四.Golang](golang/go_env.md)
+* [五.Markdown语法规范](markdown/markdown_01.md) 
+* [六.应用/项目 藏书阁](programLibrary)
+* [七.生活随笔](essay)
