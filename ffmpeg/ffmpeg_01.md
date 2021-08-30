@@ -27,3 +27,12 @@ ffmpeg -i videofile  -vf scale=1440:1080,setdar=4:3  outvideo -y
 ```
 ffmpeg -i input.mkv -vf hflip hflip.mkv
 ```
+##### 6.视频裁剪（0:01:26到0:11:00）
+```
+ffmpeg -i video.mp4 -ss 0:01:26 -c copy -to 0:11:00 video_out.mp4
+```
+##### 7.视频去水印，模糊水印，通过周围像素插值去除
+```
+ffmpeg -i JINUSEAN.mp4 -vf delogo=x=72:y=32:w=168:h=86,delogo=x=72:y=32:w=168:h=86, output.mp4
+x,y为水印坐标，w,h为水印宽高,同时去除两个水印
+```
