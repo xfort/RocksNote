@@ -22,7 +22,7 @@ git pull
 ```
 ##### 3.新建tag
 ```
-git -a v1.0 -m ’v1.0版本‘
+git tag -a v1.0 -m ’v1.0版本‘
 git push origin v1.0 //git push origin --tags 推送所有
 ```
 ##### 4.添加、push多个仓库
