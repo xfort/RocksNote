@@ -5,7 +5,6 @@
 adb shell pm list packages
 adb shell pm path com.huawei.camera
 adb pull /system/priv-app/HwCamera2/HwCamera2.apk  C:/Users/fly/Desktop
-
 ```
 #### 2.apksigner签名打包 v1、v2
 官方文档 https://developer.android.com/studio/command-line/apksigner.html?hl=zh_cn
@@ -30,7 +29,6 @@ zipalign -c -v <alignment> existing.apk
 -v：详细输出
 -p：outfile.zip 应对 infile.zip 中的所有共享对象文件使用相同的页面对齐方式
 -c：确认给定文件的对齐方式
-
 ```
 
 #### 4.查看签名证书信息

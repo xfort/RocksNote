@@ -3,11 +3,14 @@
 ```
 #1.更改密码
 sudo passwd
+sudo passwd [username]
 
 #2.添加用户
 adduser userX
 #3.添加sudo权限
 vim /etc/sudoers
+usermod -a -G sudo <username>
+
 #4.生成ssh密钥对（要在非root账户下生成），把
 ssh-keygen -t rsa
 
