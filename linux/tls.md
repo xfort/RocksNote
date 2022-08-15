@@ -12,3 +12,5 @@ sudo certbot certonly --nginx #只要证书 不修改nginx
 sudo certbot renew --dry-run #自动检测、重新生成
 
 ```
+##### 3.certbot更新证书后的自动执行脚本
+
