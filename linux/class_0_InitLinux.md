@@ -97,4 +97,13 @@ MaxStartups 10                                                  同时允许几�
 DenyUsers *                                                     设定受抵挡的使用者名称
 AllowUsers *                                                    设定允许的使用者名称
 ```
-
+# 6 dnf更新加速
+修改 /etc/dnf/dnf.conf 文件，新增两行
+```
+max_parallel_downloads=10
+fastestmirror=True
+```
+最后 
+```
+sudo dnf upgrade --refresh
+```
