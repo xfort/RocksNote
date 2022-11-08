@@ -1,7 +1,7 @@
-#### linux新系统设置
+# linux新系统设置
 
 ```
-#1.更改密码
+#1 .更改密码
 sudo passwd
 sudo passwd [username]
 
@@ -97,7 +97,7 @@ MaxStartups 10                                                  同时允许几�
 DenyUsers *                                                     设定受抵挡的使用者名称
 AllowUsers *                                                    设定允许的使用者名称
 ```
-# 6 dnf更新加速
+#### 6 dnf更新加速
 修改 /etc/dnf/dnf.conf 文件，新增两行
 ```
 max_parallel_downloads=10
@@ -106,4 +106,27 @@ fastestmirror=True
 最后 
 ```
 sudo dnf upgrade --refresh
+```
+
+#### 7 GNOME插件
+隐藏头部标题栏 https://extensions.gnome.org/extension/545/hide-top-bar/
+底部任务栏 https://extensions.gnome.org/extension/602/window-list/
+
+#### 8 Fedora36 安装NVIDIA驱动，一定要选择显卡对应的驱动版本号！！！
+开启rpmfusion https://rpmfusion.org/Howto/NVIDIA
+fedora安装教程 https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/
+```
+开启rpmfusion
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf upgrade --refresh
+升级后重启系统选择最新内核版本
+sudo dnf install gcc kernel-headers kernel-devel 
+选择自己显卡对应的驱动版本，例如我的显卡型号K1100M 对应 470xx
+
+sudo dnf install akmod-nvidia-470xx xorg-x11-drv-nvidia-470xx xorg-x11-drv-nvidia-470xx-libs xorg-x11-drv-nvidia-470xx-libs.i686  sudo dnf install xorg-x11-drv-nvidia-470xx-cuda 
+等待结束
+sudo akmods --force
+sudo dracut --force
+重启，验证
 ```
