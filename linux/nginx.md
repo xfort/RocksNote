@@ -3,6 +3,7 @@
 
 ##### 1.Http server https://docs.nginx.com/nginx/admin-guide/web-server/web-server/
 官方例子 https://www.nginx.com/resources/wiki/start/topics/examples/full/
+centos的nginx配置路径  /etc/nginx/nginx.conf
 ```
   server { # 
     listen       80;
